@@ -24,7 +24,7 @@ class BlogTest(TestCase):
     def test_post_content(self):
         self.assertEqual(f"{self.post.title}", "A title")
         self.assertEqual(f"{self.post.body}", "A body")
-        self.assertEqual(f"{self.post.author}", "A test")
+        self.assertEqual(f"{self.post.author}", "test")
 
     def test_post_list_view(self):
         response = self.client.get("/")
